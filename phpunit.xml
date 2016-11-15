@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit
+verbose="true"
+bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="allTests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <!--Mysql connector parameters-->
+        <var name="MYSQL_HOST"      value="127.0.0.1"/>
+        <var name="MYSQL_USER"      value="root"/>
+        <var name="MYSQL_PASS"   value="118649qwe"/>
+        <var name="MYSQL_DB_NAME"   value="todos"/>
+        <var name="MYSQL_PORT"      value="3306"/>
+        <var name="MYSQL_CHARSET"   value="utf8"/>
+        <!---->
+    </php>
+</phpunit>

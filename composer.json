@@ -1,0 +1,17 @@
+{
+    "name": "konstantinmetto/laracast",
+    "authors": [
+        {
+            "name": "wild octopus",
+            "email": "met9127@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^5.6"
+    },
+    "autoload":{
+        "psr-4":{
+            "Octopus\\":""
+        }
+    }
+}
