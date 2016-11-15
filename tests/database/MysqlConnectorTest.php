@@ -13,8 +13,6 @@ class MysqlConnectorTest extends TestCase
 {
     private $config;
 
-    private $connection;
-
     protected function setUp()
     {
         $this->config = [
@@ -27,7 +25,7 @@ class MysqlConnectorTest extends TestCase
         ];
     }
 
-    public function testMysqlConnector()
+    public function testConnector()
     {
         $this->assertInstanceOf(\PDO::class, (new \Octopus\Database\Connectors\MysqlConnector())->connect($this->config));
     }

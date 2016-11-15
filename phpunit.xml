@@ -11,9 +11,18 @@ bootstrap="vendor/autoload.php">
         <!--Mysql connector parameters-->
         <var name="MYSQL_HOST"      value="127.0.0.1"/>
         <var name="MYSQL_USER"      value="root"/>
-        <var name="MYSQL_PASS"   value=""/>
+        <var name="MYSQL_PASS"      value=""/>
         <var name="MYSQL_DB_NAME"   value="lara"/>
         <var name="MYSQL_PORT"      value="3306"/>
+        <var name="MYSQL_CHARSET"   value="utf8"/>
+        <!---->
+
+        <!--PostgreSql connector parameters-->
+        <var name="PGSQL_HOST"      value="127.0.0.1"/>
+        <var name="PGSQL_USER"      value="postgres"/>
+        <var name="PGSQL_PASS"      value=""/>
+        <var name="PGSQL_DB_NAME"   value="test"/>
+        <var name="PGSQL_PORT"      value="5432"/>
         <var name="MYSQL_CHARSET"   value="utf8"/>
         <!---->
     </php>
