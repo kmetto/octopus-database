@@ -1,6 +1,6 @@
 {
     "name": "octopus/database",
-    "description":"Databse manager",
+    "description":"Database manager",
     "authors": [
         {
             "name": "wild octopus",
