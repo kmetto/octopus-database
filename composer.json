@@ -1,5 +1,6 @@
 {
-    "name": "konstantinmetto/laracast",
+    "name": "octopus/database",
+    "description":"Databse manager",
     "authors": [
         {
             "name": "wild octopus",
@@ -11,7 +12,7 @@
     },
     "autoload":{
         "psr-4":{
-            "Octopus\\":""
+            "Octopus\\":"src/"
         }
     }
 }

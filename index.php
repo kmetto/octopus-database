@@ -3,9 +3,10 @@
 require_once "vendor/autoload.php";
 $config = require_once "config.php";
 
-use Octopus\Database\QueryBuilder;
+$res = new \Octopus\Database\ConnectionDriverResolver();
 
+$res->register("mysql", function(){
+    return new \Octopus\Database\Connectors\MysqlConnector();
+});
 
-$builder = new QueryBuilder((new \Octopus\Database\Connectors\MysqlConnector())->connect($config['database']));
-
-print_r($builder->selectAll('todos'));
+var_dump($res->resolve('mysql'));

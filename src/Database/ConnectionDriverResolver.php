@@ -18,7 +18,7 @@ class ConnectionDriverResolver
 
     public function register($driver, \Closure $closure)
     {
-        $this->resolvers['driver'] = $closure;
+        $this->resolvers[$driver] = $closure;
     }
 
     public function resolve($driver)
@@ -30,5 +30,7 @@ class ConnectionDriverResolver
         if (isset($this->resolvers[$driver])) {
             return $this->resolved[$driver] = call_user_func($this->resolvers[$driver]);
         }
+
+        throw new \InvalidArgumentException("Driver {$driver} not exists");
     }
 }
