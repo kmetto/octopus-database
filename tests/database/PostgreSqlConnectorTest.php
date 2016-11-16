@@ -23,6 +23,10 @@ class PostgresqlConnectorTest extends TestCase
 
     public function testConnector()
     {
-        $this->assertInstanceOf(\PDO::class, (new \Octopus\Database\Connectors\PostgresqlConnector())->connect($this->config));
+        try{
+            (new \Octopus\Database\Connectors\PostgresqlConnector())->connect($this->config);
+        } catch (Exception $e){
+            $this->assertInstanceOf(\PDOException::class, $e);
+        }
     }
 }

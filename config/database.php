@@ -18,6 +18,22 @@ return [
             "options" => [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]
+        ],
+        'postgresql' => [
+            "host" => "127.0.0.1",
+            "dbname" => "lara",
+            "username" => "root",
+            "password" => "",
+            "port" => "3306",
+            "charset" => "utf8",
+            "options" => [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            ]
+        ],
+        'sqlite' => [
+            "path" => "/",
+            "version" => "3",
+            "dbname" => "lara",
         ]
     ]
 ];

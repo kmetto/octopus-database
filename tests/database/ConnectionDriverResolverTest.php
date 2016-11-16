@@ -25,7 +25,7 @@ class ConnectionDriverResolverTest extends \PHPUnit\Framework\TestCase
     public function testConnectionDriverResolver()
     {
         $this->resolver->register('mysql', function () {
-            return $this->createMock(\Octopus\Database\Connectors\MysqlConnector::class);;
+            return $this->createMock(\Octopus\Database\Connectors\MysqlConnector::class);
         });
 
         $this->assertInstanceOf(\Octopus\Database\Connectors\MysqlConnector::class, $this->resolver->resolve('mysql'));
