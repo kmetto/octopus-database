@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
  * Date: 15.11.2016
  * Time: 22:54
  */
-class PostgresqlConnectorTest extends TestCase
+class PostgresqlConnectorTest extends PDOExt
 {
     private $config;
 

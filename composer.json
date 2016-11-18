@@ -13,6 +13,9 @@
     "autoload":{
         "psr-4":{
             "Octopus\\":"src/"
-        }
+        },
+        "classmap":[
+            "tests/database/PDOExt.php"
+        ]
     }
 }

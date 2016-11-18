@@ -8,7 +8,7 @@ use \Octopus\Database\ConnectionDriverResolver;
  * @copyright   A copyright
  * @license     A "Slug" license name e.g. GPL2
  */
-class ConnectionDriverResolverTest extends \PHPUnit\Framework\TestCase
+class ConnectionDriverResolverTest extends PDOExt
 {
     protected $resolver;
 

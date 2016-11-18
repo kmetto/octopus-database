@@ -9,12 +9,14 @@ use PHPUnit\Framework\TestCase;
  * Date: 15.11.16
  * Time: 10:18
  */
-class MysqlConnectorTest extends TestCase
+class MysqlConnectorTest extends PDOExt
 {
     private $config;
 
     protected function setUp()
     {
+        parent::setUp();
+
         $this->config = [
             "host" => $GLOBALS['MYSQL_HOST'],
             "dbname" => $GLOBALS['MYSQL_DB_NAME'],

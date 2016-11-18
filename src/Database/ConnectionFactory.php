@@ -14,11 +14,12 @@ class ConnectionFactory
 {
     private $resolver;
 
-    public function make(array $config, ConnectionDriverResolver $resolver){
+    public function __construct(ConnectionDriverResolver $resolver)
+    {
         $this->resolver = $resolver;
     }
 
-    private function createConnection(){
+    public function make(array $config){
 
     }
 }

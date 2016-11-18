@@ -7,7 +7,7 @@
  * @copyright   A copyright
  * @license     A "Slug" license name e.g. GPL2
  */
-class SqliteConnectorTest extends \PHPUnit\Framework\TestCase
+class SqliteConnectorTest extends PDOExt
 {
     protected $config;
 
